@@ -1,27 +1,22 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-  Image,
-} from 'react-native';
+import StackNavigator from './StackNavigator';
+import {NavigationContainer} from '@react-navigation/native';
 
 const App = () => {
   return (
-    <SafeAreaView style={styles.sectionContainer}>
-      <Text>SOULMATE</Text>
-    </SafeAreaView>
+    <NavigationContainer>
+      <StackNavigator />
+    </NavigationContainer>
   );
 };
 
-const styles = StyleSheet.create({
-  sectionContainer: {
-    justifyContent: 'center',
-    alignContent: 'center',
-    alignItems: 'center',
-  },
-});
+// const styles = StyleSheet.create({
+//   sectionContainer: {
+//     flex: 1,
+//     justifyContent: 'center',
+//     alignContent: 'center',
+//     alignItems: 'center',
+//   },
+//});
 
 export default App;
