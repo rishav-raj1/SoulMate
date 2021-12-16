@@ -4,10 +4,11 @@ import {View, Text} from 'react-native';
 import HomeScreen from './Screens/HomeScreen';
 import ChatScreen from './Screens/ChatScreen';
 import LoginScreen from './Screens/LoginScreen';
+import useAuth from './Navigation/useAuth';
 const Stack = createNativeStackNavigator();
 
 const StackNavigator = () => {
-  const user = true;
+  const {user} = useAuth();
   return (
     <Stack.Navigator>
       {user ? (
