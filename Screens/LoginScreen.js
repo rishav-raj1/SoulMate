@@ -1,12 +1,19 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  TouchableOpacity,
+  ScrollView,
+  Dimensions,
+  FlatList,
+} from 'react-native';
 
 const LoginScreen = () => {
-  return (
-    <View>
-      <Text>Login to the App</Text>
-    </View>
-  );
-};
+    return (
+      <Text>Login Screen</Text>
+    );
+  };
+
 
 export default LoginScreen;
